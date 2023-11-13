@@ -6,7 +6,6 @@ export default function Species({ species, handleSpecies, handleAllSpecies }) {
   return (
     <div>
         <h2>Species</h2>
-      <div>
       {
         species.map((specie, index) => {
           return (
@@ -15,6 +14,7 @@ export default function Species({ species, handleSpecies, handleAllSpecies }) {
         })
       }
       <button onClick={handleAllSpecies}>All Animals</button>
-      </div>
-    </div>)
+      
+    </div>
+  )
 }
