@@ -12,13 +12,17 @@ export default function Bienvenido() {
     <div>
       <h1>Programacion</h1>
       <h3>{studentName}</h3>
+      <ul>
       {
         techSkills.map((skill, index) => {
           return (
+            
             <li key={index}>{skill}</li>
-          )
-        })
-      }
+            
+            )
+          })
+        }
+        </ul>
       <Botones alerts={alerts} />
     </div>
   )
